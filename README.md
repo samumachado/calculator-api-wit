@@ -18,8 +18,7 @@ RUN THE PROJECT
 1. Clone the Repository (https://github.com/samumachado/calculator-api-wip.git)
 2. In the root directory run "mvn clean install"
 3. Run the following commands:
-  docker-compose build
-  docker-compose up
+   docker-compose up --build
 
 Test:
 
