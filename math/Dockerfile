@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/math-1.0-SNAPSHOT.jar app.jar
 
 # Expose the port if your calculator module exposes one (remove if not)
-EXPOSE 8080
+EXPOSE 8082
 
 # Run the jar file
 ENTRYPOINT ["java", "-jar", "app.jar"]
