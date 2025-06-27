@@ -20,3 +20,10 @@ RUN THE PROJECT
 3. Run the following commands:
   docker-compose build
   docker-compose up
+
+Test:
+curl -i "http://localhost:8081/sum?a=2&b=4" 
+curl -i "http://localhost:8081/subtraction?a=-3&b=-10.4444" 
+curl -i "http://localhost:8081/multiplication?a=-3&b=-10.33" 
+curl -i "http://localhost:8081/division?a=-3&b=0" 
+curl -i "http://localhost:8081/division?a=-3&b=4" 
