@@ -7,8 +7,6 @@ Math Module –> consumes operations from Kafka, computes the result, and sends 
 
 Requirements
 
-- Java 17+
-- Maven
 - Docker
 
 ---
@@ -16,8 +14,7 @@ Requirements
 RUN THE PROJECT
 
 1. Clone the Repository (https://github.com/samumachado/calculator-api-wip.git)
-2. In the root directory run "mvn clean install"
-3. Run the following commands:
+2. In the root directory, run the following command:
    docker-compose up --build
 
 Test:
