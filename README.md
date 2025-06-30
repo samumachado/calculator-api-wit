@@ -1,6 +1,6 @@
 # Description
 
-A simple distributed calculator using Spring Boot and Apache Kafka. It includes two microservices:
+A simple distributed calculator using Spring Boot and Apache Kafka.
 
 REST Module –> exposes HTTP endpoints for math operations and sends them via Kafka.
 Math Module –> consumes operations from Kafka, computes the result, and sends it back to REST via Kafka.
