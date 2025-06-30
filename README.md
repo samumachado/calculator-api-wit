@@ -1,3 +1,5 @@
+# Description
+
 A simple distributed calculator using Spring Boot and Apache Kafka. It includes two microservices:
 
 REST Module –> exposes HTTP endpoints for math operations and sends them via Kafka.
@@ -5,13 +7,13 @@ Math Module –> consumes operations from Kafka, computes the result, and sends 
 
 ---
 
-Requirements
+### Requirements
 
 - Docker
 
 ---
 
-RUN THE PROJECT
+# RUN THE PROJECT
 
 1. Clone the Repository (https://github.com/samumachado/calculator-api-wip.git)
 2. In the root directory, run the following command:
@@ -19,11 +21,11 @@ RUN THE PROJECT
 
 ---
 
-TEST THE PROJECT: (with another terminal, for example)
+# TEST THE PROJECT: (with another terminal, for example)
 
-# SIMPLE OPERATIONS
+## SIMPLE OPERATIONS
 
-# Addition
+### Addition
 
 curl -i "http://localhost:8081/sum?a=3&b=2"
 
@@ -34,7 +36,7 @@ Date: Mon, 30 Jun 2025 10:13:48 GMT
 
 {"result":"5"}
 
-# Subtraction
+### Subtraction
 
 curl -i "http://localhost:8081/subtraction?a=3&b=2"
 
@@ -45,7 +47,7 @@ Date: Mon, 30 Jun 2025 10:14:35 GMT
 
 {"result":"1"}
 
-# Multiplication
+### Multiplication
 
 curl -i "http://localhost:8081/multiplication?a=3&b=2"
 
@@ -56,7 +58,7 @@ Date: Mon, 30 Jun 2025 10:15:16 GMT
 
 {"result":"6"}
 
-# Division
+### Division
 
 curl -i "http://localhost:8081/division?a=3&b=2"
 
@@ -67,9 +69,9 @@ Date: Mon, 30 Jun 2025 10:16:24 GMT
 
 {"result":"1.50000000000000000000"}
 
-# DECIMALS
+## DECIMALS
 
-# Addition with decimals
+### Addition with decimals
 
 curl -i "http://localhost:8081/sum?a=2.5&b=3.75"
 
@@ -80,7 +82,7 @@ Date: Mon, 30 Jun 2025 10:17:30 GMT
 
 {"result":"6.25"}
 
-# Division with decimals
+### Division with decimals
 
 curl -i "http://localhost:8081/division?a=5.5&b=2.2"
 
@@ -91,9 +93,9 @@ Date: Mon, 30 Jun 2025 10:18:28 GMT
 
 {"result":"2.50000000000000000000"}
 
-# NEGATIVES
+## NEGATIVES
 
-# Subtraction with negatives
+### Subtraction with negatives
 
 curl -i "http://localhost:8081/subtraction?a=-3&b=-2"
 
@@ -104,7 +106,7 @@ Date: Mon, 30 Jun 2025 10:18:41 GMT
 
 {"result":"-1"}
 
-# Multiplication with one negative
+### Multiplication with one negative
 
 curl -i "http://localhost:8081/multiplication?a=-3&b=2"
 
@@ -115,7 +117,7 @@ Date: Mon, 30 Jun 2025 10:19:10 GMT
 
 {"result":"-6"}%
 
-# Division with negative and zero (edge case)
+### Division with negative and zero (edge case)
 
 curl -i "http://localhost:8081/division?a=-3&b=0"
 
@@ -127,9 +129,9 @@ Connection: close
 
 {"error":"Division by zero is not allowed."}
 
-# SCIENTIFIC NOTATION
+## SCIENTIFIC NOTATION
 
-# Multiplication with scientific notation
+### Multiplication with scientific notation
 
 curl -i "http://localhost:8081/multiplication?a=1e3&b=2e-2"
 
@@ -140,7 +142,7 @@ Date: Mon, 30 Jun 2025 10:19:57 GMT
 
 {"result":"20"}
 
-# Division with scientific notation
+### Division with scientific notation
 
 curl -i "http://localhost:8081/division?a=5e4&b=2.5e2"
 
