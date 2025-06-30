@@ -19,6 +19,8 @@ Math Module –> consumes operations from Kafka, computes the result, and sends 
 2. In the root directory, run the following command:
    docker-compose up --build
 
+note: Docker must be running
+
 ---
 
 # TEST THE PROJECT: (with another terminal, for example)
